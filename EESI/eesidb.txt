@@ -1,0 +1,37 @@
+drop database eesi
+create database eesi
+connect to eesi
+
+create table user(username varchar(10),password varchar(50));
+
+create table department(deptcode varchar(10)not null primary key, deptdesc varchar(50));
+
+create table job(jobcode varchar(10)not null primary key, jobdesc varchar(50));
+
+create table employee (empid varchar(10) not null primary key, firstname varchar(50),lastname varchar(50),midinit varchar(5),gender varchar(1),phoneno varchar(15),jobcode varchar(15) references job,deptcode varchar (10)references department,hiredate date,empstat varchar(10));
+
+create table project(projectno varchar(15) not null primary key, projectname varchar(50), projectloc varchar(80),projectstart date,projectend date,projstat varchar(20));
+
+create table devices(itemid varchar(10) not null primary key, itemtype varchar(20),capacity varchar(10),description varchar(50), status varchar(20));
+
+create table computer(pcid varchar(10) not null primary key, ctype varchar(20),processor varchar(50),ram varchar(10),vram varchar(20),display varchar(50),hdd varchar(10),rom varchar(10), status varchar(20));
+
+create table account(accid varchar(15) not null primary key,acctype varchar(15),empid varchar(15) references employee,projectno varchar (10)references project,dateadded date, status varchar(10),stamp varchar(30));
+
+create table loi(unitcode varchar(10) not null primary key,brand varchar(20),model varchar(40),serialno varchar(15),loistat varchar(15),scinfo varchar(30),raminfo varchar(30),dateadded date,status varchar(10),pcid varchar(15) references computer,itemid varchar (10)references devices);
+
+create table register(processid varchar(10) not null primary key,accid varchar(15) references account,unitcode varchar (10)references loi,datereceived date,datereturned date, status varchar(10));
+
+create sequence emp_seq no cycle increment by 2 cache 5;
+
+create sequence proj_seq no cycle increment by 5 cache 3;
+
+create sequence dev_seq no cycle increment by 4 cache 5;
+
+create sequence comp_seq no cycle increment by 2 cache 8;
+
+create sequence acc_seq no cycle increment by 5 cache 4;
+
+create sequence uc_seq no cycle increment by 6 cache 5;
+
+create sequence reg_seq no cycle increment by 2 cache 5;

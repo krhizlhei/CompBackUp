@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="lib" path="C:/Users/User/workspace/EESI/modules/com-jaspersoft-ireport.jar"/>
+	<classpathentry kind="lib" path="C:/Users/User/workspace/EESI/modules/com-jaspersoft-ireport-addons.jar"/>
+	<classpathentry kind="lib" path="C:/Users/User/workspace/EESI/modules/com-jaspersoft-ireport-components.jar"/>
+	<classpathentry kind="lib" path="C:/Users/User/workspace/EESI/modules/com-jaspersoft-ireport-designer-standalone.jar"/>
+	<classpathentry kind="lib" path="C:/Users/User/workspace/EESI/modules/com-jaspersoft-ireport-hadoop-hive.jar"/>
+	<classpathentry kind="lib" path="C:/Users/User/workspace/EESI/modules/com-jaspersoft-ireport-heartbeat.jar"/>
+	<classpathentry kind="lib" path="C:/Users/User/workspace/EESI/modules/com-jaspersoft-ireport-jasperserver.jar"/>
+	<classpathentry kind="lib" path="C:/Users/User/workspace/EESI/modules/com-jaspersoft-ireport-mongodb.jar"/>
+	<classpathentry kind="lib" path="C:/Users/User/workspace/EESI/modules/com-jaspersoft-ireport-samples.jar"/>
+	<classpathentry kind="lib" path="C:/Users/User/workspace/EESI/modules/com-jaspersoft-jrx.jar"/>
+	<classpathentry kind="lib" path="C:/Users/User/workspace/EESI/java/Common.jar"/>
+	<classpathentry kind="lib" path="C:/Users/User/workspace/EESI/java/db2dbgm.jar"/>
+	<classpathentry kind="lib" path="C:/Users/User/workspace/EESI/java/db2java.zip"/>
+	<classpathentry kind="lib" path="C:/Users/User/workspace/EESI/java/db2jcc.jar"/>
+	<classpathentry kind="lib" path="C:/Users/User/workspace/EESI/java/db2jcc_license_cu.jar"/>
+	<classpathentry kind="lib" path="C:/Users/User/workspace/EESI/java/db2jcc4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/User/workspace/EESI/java/db2policy.jar"/>
+	<classpathentry kind="lib" path="C:/Users/User/workspace/EESI/java/db2qgjava.jar"/>
+	<classpathentry kind="lib" path="C:/Users/User/workspace/EESI/java/db2umplugin.jar"/>
+	<classpathentry kind="lib" path="C:/Users/User/workspace/EESI/java/sqlj.zip"/>
+	<classpathentry kind="lib" path="C:/Users/User/workspace/EESI/java/sqlj4.zip"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

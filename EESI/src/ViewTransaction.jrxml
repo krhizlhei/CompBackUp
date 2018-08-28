@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="ViewTransaction" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="3b069e72-da42-4140-9118-56c86238077b">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="ParamSort" class="java.lang.String"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT
+     REG_VIEW."PROCESSID" AS REG_VIEW_PROCESSID,
+     REG_VIEW."ACCID" AS REG_VIEW_ACCID,
+     REG_VIEW."NAME" AS REG_VIEW_NAME,
+     REG_VIEW."DEPTDESC" AS REG_VIEW_DEPTDESC,
+     REG_VIEW."PROJECTNAME" AS REG_VIEW_PROJECTNAME,
+     REG_VIEW."PROJECTLOC" AS REG_VIEW_PROJECTLOC,
+     REG_VIEW."UNITCODE" AS REG_VIEW_UNITCODE,
+     REG_VIEW."BRAND" AS REG_VIEW_BRAND,
+     REG_VIEW."MODEL" AS REG_VIEW_MODEL,
+     REG_VIEW."SERIALNO" AS REG_VIEW_SERIALNO,
+     REG_VIEW."RAMINFO" AS REG_VIEW_RAMINFO,
+     REG_VIEW."LOISTATUS" AS REG_VIEW_LOISTATUS,
+     REG_VIEW."SCINFO" AS REG_VIEW_SCINFO,
+     REG_VIEW."STATUS" AS REG_VIEW_STATUS,
+     REG_VIEW."DATERETURNED" AS REG_VIEW_DATERETURNED,
+     REG_VIEW."DATERECEIVED" AS REG_VIEW_DATERECEIVED
+FROM
+     "USER"."REG_VIEW" REG_VIEW]]>
+	</queryString>
+	<field name="REG_VIEW_PROCESSID" class="java.lang.String"/>
+	<field name="REG_VIEW_NAME" class="java.lang.String"/>
+	<field name="REG_VIEW_DEPTDESC" class="java.lang.String"/>
+	<field name="REG_VIEW_PROJECTNAME" class="java.lang.String"/>
+	<field name="REG_VIEW_PROJECTLOC" class="java.lang.String"/>
+	<field name="REG_VIEW_UNITCODE" class="java.lang.String"/>
+	<field name="REG_VIEW_BRAND" class="java.lang.String"/>
+	<field name="REG_VIEW_MODEL" class="java.lang.String"/>
+	<field name="REG_VIEW_SERIALNO" class="java.lang.String"/>
+	<field name="REG_VIEW_RAMINFO" class="java.lang.String"/>
+	<field name="REG_VIEW_LOISTATUS" class="java.lang.String"/>
+	<field name="REG_VIEW_SCINFO" class="java.lang.String"/>
+	<field name="REG_VIEW_STATUS" class="java.lang.String"/>
+	<field name="REG_VIEW_DATERETURNED" class="java.sql.Date"/>
+	<field name="REG_VIEW_DATERECEIVED" class="java.sql.Date"/>
+	<group name="REG_VIEW_PROCESSID">
+		<groupExpression><![CDATA[$F{REG_VIEW_PROCESSID}]]></groupExpression>
+		<groupHeader>
+			<band height="111">
+				<textField>
+					<reportElement x="80" y="0" width="100" height="20" uuid="02330f23-b052-4c1e-97a7-086a0ab8d986"/>
+					<textFieldExpression><![CDATA[$F{REG_VIEW_PROCESSID}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="80" y="26" width="129" height="20" uuid="a6f5ec5a-a309-47eb-b445-7abcfabdb39f"/>
+					<textFieldExpression><![CDATA[$F{REG_VIEW_NAME}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="333" y="26" width="100" height="20" uuid="a8d6ad2d-0aaa-43de-9b72-c654886dc5e2"/>
+					<textFieldExpression><![CDATA[$F{REG_VIEW_DEPTDESC}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="80" y="53" width="61" height="20" uuid="a72f3fc4-5c02-4bc0-a4c8-ff09025c2468"/>
+					<textFieldExpression><![CDATA[$F{REG_VIEW_PROJECTNAME}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="331" y="53" width="149" height="20" uuid="18deced3-e0fb-453e-aec7-2eb53dfa4ab6"/>
+					<textFieldExpression><![CDATA[$F{REG_VIEW_PROJECTLOC}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="0" y="91" width="61" height="20" uuid="e60ef80b-ae0b-4b19-8592-86f45d45d33c"/>
+					<text><![CDATA[Unitcode]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="76" y="91" width="61" height="20" uuid="74216df6-0066-474a-9a73-dc3d287b366f"/>
+					<text><![CDATA[Brand]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="161" y="91" width="61" height="20" uuid="438d6dc4-7b21-4022-9a09-7d4fb0932c17"/>
+					<text><![CDATA[Model]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="244" y="91" width="61" height="20" uuid="d9cd8963-b1ff-43e5-8cb4-92e19ff733b1"/>
+					<text><![CDATA[Serial No]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="331" y="91" width="61" height="20" uuid="530177b8-57f6-4d7b-8cad-247dd01aa494"/>
+					<text><![CDATA[RAM Info]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="407" y="91" width="87" height="20" uuid="ecfae09c-d589-48a1-8648-45b077b8c52d"/>
+					<text><![CDATA[Storage Capacity]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="494" y="91" width="61" height="20" uuid="a39d6a13-26cc-4ed6-baca-5f1570804177"/>
+					<text><![CDATA[Item Status]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="231" y="53" width="90" height="20" uuid="a413beff-5a81-426a-83fb-693eb3560191"/>
+					<text><![CDATA[Project Location :]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="0" y="53" width="76" height="20" uuid="2b4015b4-fe5a-449f-bc96-116967f146e9"/>
+					<text><![CDATA[Project Name :]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="15" y="0" width="61" height="20" uuid="e0118df6-fa77-43e7-a924-03365ab51197"/>
+					<text><![CDATA[Process ID :]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="35" y="26" width="41" height="20" uuid="0d1fffb5-bca5-46b9-9c7c-806a278b77fc"/>
+					<text><![CDATA[Name :]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="258" y="26" width="63" height="20" uuid="c7afb1d9-584b-43c9-9617-35c65ab1eb4a"/>
+					<text><![CDATA[Deparment :]]></text>
+				</staticText>
+			</band>
+		</groupHeader>
+		<groupFooter>
+			<band height="50">
+				<textField>
+					<reportElement x="41" y="0" width="100" height="20" uuid="55c7a3c8-c3b5-42cf-b298-4bd15c85b9f3"/>
+					<textFieldExpression><![CDATA[$F{REG_VIEW_STATUS}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="433" y="0" width="100" height="20" uuid="554e3a19-b748-49b8-991a-27d652e6c885"/>
+					<textFieldExpression><![CDATA[$F{REG_VIEW_DATERETURNED}!=null ? $F{REG_VIEW_DATERETURNED}:""]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="222" y="0" width="100" height="20" uuid="ab75750b-c7d6-4f15-b27e-751d78a27f59"/>
+					<textFieldExpression><![CDATA[$F{REG_VIEW_DATERECEIVED}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="0" y="0" width="41" height="20" uuid="efb331ec-4256-4848-a77a-b6ef2cf6d131"/>
+					<text><![CDATA[Status :]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="170" y="0" width="61" height="20" uuid="4272c1bd-fe8e-4113-a049-374276a744ea"/>
+					<text><![CDATA[Received :]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="373" y="0" width="60" height="20" uuid="5564dd46-44e6-40a5-8fed-281b01ad91aa"/>
+					<text><![CDATA[Returned :]]></text>
+				</staticText>
+				<break type="Column">
+					<reportElement x="0" y="34" width="100" height="1" uuid="1b57d078-be66-4dba-9ad9-06be65be1e80"/>
+				</break>
+			</band>
+		</groupFooter>
+	</group>
+	<group name="REG_VIEW_DEPTDESC">
+		<groupExpression><![CDATA[$F{REG_VIEW_DEPTDESC}]]></groupExpression>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="555" height="45" uuid="7f75f630-18da-4a87-bf84-6eb06bd5723c"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="32" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Registered Items by]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="0" y="45" width="555" height="34" uuid="a32cf7a4-53b6-4301-99aa-ca6dec77a891"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{REG_VIEW_PROCESSID}.contains( $P{ParamSort} ) || $F{REG_VIEW_NAME}$F{REG_VIEW_NAME}.contains( $P{ParamSort} ) ||
+$F{REG_VIEW_DEPTDESC}.contains( $P{ParamSort} )|| $F{REG_VIEW_PROJECTNAME}.contains( $P{ParamSort} )]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="12" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="16" splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="49" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="20" width="61" height="20" uuid="8cc17857-934b-4f7e-9942-7a10b9db84b8"/>
+				<textFieldExpression><![CDATA[$F{REG_VIEW_UNITCODE}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="76" y="20" width="61" height="20" uuid="f328b848-c748-4cae-b4d7-f889e9c92482"/>
+				<textFieldExpression><![CDATA[$F{REG_VIEW_BRAND}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="161" y="20" width="61" height="20" uuid="aafa3317-fa40-4ca9-80e3-97680c825a06"/>
+				<textFieldExpression><![CDATA[$F{REG_VIEW_MODEL}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="244" y="20" width="61" height="20" uuid="ae951079-4acb-44ba-b4a3-e89db701913e"/>
+				<textFieldExpression><![CDATA[$F{REG_VIEW_SERIALNO}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="331" y="20" width="61" height="20" uuid="850f75db-3d3f-47ec-8532-7ee92962eb94"/>
+				<textFieldExpression><![CDATA[$F{REG_VIEW_RAMINFO}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="494" y="20" width="61" height="20" uuid="6e5bcdd0-25e3-4cad-9c19-57af545fd1ac"/>
+				<textFieldExpression><![CDATA[$F{REG_VIEW_LOISTATUS}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="407" y="20" width="61" height="20" uuid="0f351508-7668-407e-87e7-6aa94f797515"/>
+				<textFieldExpression><![CDATA[$F{REG_VIEW_SCINFO}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
